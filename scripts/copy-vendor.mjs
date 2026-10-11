@@ -1,5 +1,5 @@
 // index.html が読み込むライブラリを、node_modules から vendor/ へコピーする。
-// vendor/ はコミットしない。手元では npm install のあとに、公開時はワークフローの中で実行される。
+// vendor/ はコミットしない。手元では npm install のあとに、公開時は Cloudflare Pages のビルドで実行される。
 import { cpSync, rmSync } from 'node:fs';
 
 // [コピー元（node_modules からの相対パス）, コピー先（vendor からの相対パス）]
